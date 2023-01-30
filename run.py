@@ -121,7 +121,7 @@ def get_last_5_entries_sales():
         column = sales.col_values(ind)
         columns.append(column[-5:])
 
-    return (columns)
+    return columns
 
 
 def calculate_stock_data(data):
@@ -136,9 +136,9 @@ def calculate_stock_data(data):
         average = sum(int_column) / len(int_column)
         stock_num = average * 1.1
         new_stock_data.append(round(stock_num))
-    
+
     return new_stock_data
-    
+
 
 def main():
     """
